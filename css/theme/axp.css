@@ -122,10 +122,7 @@ body {
 
 .reveal h4 {
   font-size: 1em;
-  color: #fff;
-  position: fixed;
-  left: 0px;
-  top: 10px; }
+  }
 
 .reveal h1 {
   text-shadow: none; }
