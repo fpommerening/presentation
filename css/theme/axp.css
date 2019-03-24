@@ -28,15 +28,15 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   }
 
 
-  .title h1 {
+
+  html.title h1 {
     font-size: 2.0em;
     text-align: left;
     color: #134B7C;
     position: static;
-    overflow-wrap: initial;
   }
 
-  .title h2 {
+  html.title h2 {
     font-size: 1.6em;
     text-align: left;
     position: static;
@@ -44,11 +44,20 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   }
   
 
-  .title h3 {
+  html.title h3 {
     font-size: 1.3em;
     text-align: left;
     position: static;
     color: #888;
+  }
+
+  
+  html.title .slides section  {
+    position: absolute;
+    bottom: 50px;
+    margin-left: 50px;
+    margin-top: 200px;
+    width: 90%
   }
 
 
