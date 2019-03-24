@@ -1,0 +1,121 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 34px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+.title body {
+  background:url("../images/axp-title.png"), url('../images/axp-logo.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, right bottom;
+  background-size: 100% 60%, 10%;
+  background-repeat: no-repeat, no-repeat;
+
+}
+
+.empty body {
+  background: #fff;
+  background-color: #fff;
+  background: url('../images/axp-logo.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 10%;
+  background-repeat: no-repeat;
+}
+
+
+
+html.title h1 {
+  font-size: 2.0em;
+  text-align: left;
+  color: #134B7C;
+  position: static;
+}
+
+html.title h2 {
+  font-size: 1.6em;
+  text-align: left;
+  position: static;
+  color: #134B7C;
+}
+
+
+html.title h3 {
+  font-size: 1.3em;
+  text-align: left;
+  position: static;
+  color: #888;
+}
+
+
+html.title .slides section  {
+  position: absolute;
+  bottom: 50px;
+  margin-left: 50px;
+  margin-top: 200px;
+  width: 90%
+}
+
+.reveal .slides section,
+.reveal .slides section>section {
+  margin-top: 10px; 
+}
+
+@mixin bodyBackground() {
+	background-color: #fff;
+  background-image: url("../images/axp-slide.png"), url("../images/axp-logo.png");
+  background-position: center top, right bottom;
+  background-size: 100% 15%, 10%;
+  background-repeat: no-repeat, no-repeat;
+  padding-top: 0px;
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal h3 {
+  color: #fff;
+  position: fixed;
+  left: 0px;
+  top: 10px; }
