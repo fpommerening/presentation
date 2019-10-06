@@ -16,7 +16,7 @@ body {
 
 .reveal {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-size: 42px;
+  font-size: 38px;
   font-weight: normal;
   color: #fff; }
 
@@ -81,7 +81,7 @@ body {
 .reveal video,
 .reveal iframe {
   max-width: 95%;
-  max-height: 95%; }
+  max-height: 80vh; }
 
 .reveal strong,
 .reveal b {
