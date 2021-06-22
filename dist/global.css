@@ -12,3 +12,11 @@ a.github {
     background-image: url("images/github.svg");
     background-size: cover;
 }
+
+div.copyright{
+	font-size: 15px;
+	position: absolute;
+  bottom: 15px;
+	text-align: center;
+	width:100%;
+}
