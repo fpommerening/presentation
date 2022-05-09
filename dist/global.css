@@ -13,6 +13,14 @@ a.github {
     background-size: cover;
 }
 
+a.nuget {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-image: url("images/nuget.svg");
+    background-size: cover;
+}
+
 div.copyright{
 	font-size: 15px;
 	position: absolute;
