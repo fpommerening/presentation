@@ -20,8 +20,12 @@ const COLOR_CODES = {
 
 function initializeTimerWithPrompt(containerId)
 {
-  var timeLimit = window.prompt("Bitte Pausenzeit eingeben", 600);
-  initializeTimer(containerId, timeLimit)
+  var input = window.prompt("Bitte Pausenzeit eingeben", 10);
+  var timeLimit = parseInt(input);
+  if(!isNaN(timeLimit))
+  {
+    initializeTimer(containerId, timeLimit * 60);
+  }
 }
 
 // Funktion zur Initialisierung des Timers in einem Container
